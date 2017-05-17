@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Salmon Cookies</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form id="sample_form">
+
+      <fieldset>
+        <label for="location">Location: </label>
+        <input type="text" name="location" placeholder="enter your location" required>
+      </fieldset>
+
+      <fieldset>
+        <label for="minCust">Minimum customers per hour: </label>
+        <input type="" name="minCust">
+      </fieldset>
+
+      <fieldset>
+        <label for="maxCust">Maximum customers per hour: </label>
+        <input type="" name="maxCust">
+      </fieldset>
+
+      <fieldset>
+        <label for="avg">Average cookies per customer: </label>
+        <input type="" name="avg">
+      </fieldset>
+
+      <button id="submit-btn" type="submit">Add store!</button>
+
+    </form>
+
+    <section id="stores">
+      <table>
+        <thead>
+          <td>Location</td>
+          <td>Minimum Customers</td>
+          <td>Maximum Customers</td>
+          <td>Average Cookies Per Customer</td>
+        </thead>
+        <tbody id="store_table">
+          <!-- student table data goes here -->
+        </tbody>
+      </table>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
