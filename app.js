@@ -1,5 +1,14 @@
 'use strict';
 
+// Yesterday, day 1 of this project, I couldn't figure out how to
+// do pretty much any of the "sales.html"  stuff which set me pretty far behind.
+//  I also don't understand what sales.html even is, as I'm writing javascript
+// in a file named app.js .
+//  So step 2 was to create a random number of customers using our given
+//  minimum and maximum.
+//
+//  When using object literals, I found that number with this,
+//
 // var firstAndPike = {
 //   min: 23,
 //   max: 65,
@@ -8,9 +17,23 @@
 //     return Math.floor(Math.random() * (this.max - this.min)) + this.min;
 //   }
 // };
+//
+//  and thats where I stopped.
+//  So,
+//  Now today I have made the table, not list, with all the known/given info, but don't
+// know how to go back and input the stuff from monday
+// 1) random number of customers
+// 2) average cookies per customer * random # of customers
+// 3) total cookies per location
+//
+//
+// I haven't done anything in a .html file either?
+//
+//
 
 
 
+// most comments from here on out were copy and pasted from a codepen example
 //
 // create constructor definition
 function Store(location, min, max, avg) {
@@ -22,13 +45,15 @@ function Store(location, min, max, avg) {
 
 // add randomCustomers method to the prototype chain
 Store.prototype.randomCustomers = function() {
-
-
+  avgCust: function(minCust, maxCust) {
+    return Math.floor(Math.random() * (this.max - this.min)) + this.min;
+    }
+    console.log(avgCust)
 
 }
 // ?i dont get ittttttt
-// ?i need the thing at the top in object literal translated to constructor or something
-// randomCustomers() has been added to data.push loop thing
+// this randomCustomers() method has been added to data.push loop thing
+
 
 // add new stores to our table by instantiating new Store objects
 var firstAndPike = new Store('First and Pike', 23, 65, 6.3);
